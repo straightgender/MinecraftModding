@@ -1,16 +1,26 @@
 package net.straight.first;
 
 import net.fabricmc.api.ModInitializer;
+import net.initializer.Items;
+import net.minecraft.util.Identifier;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.util.logging.Logger;
 
 public class FirstMod implements ModInitializer {
+
+	Logger logger = Logger.getLogger("FirstMod");
 	public static final String id = "first";
-    public static final Logger LOGGER = LoggerFactory.getLogger(id);
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+
+	logger.info("Starting Fabric ...");
+		Items.load();
+
 	}
+
+	public static Identifier id(String path){
+		return Identifier.of(id, path);
+	}
+
 }

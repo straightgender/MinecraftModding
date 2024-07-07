@@ -7,5 +7,8 @@ public class FirstModDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 
+
+
+
 	}
 }
