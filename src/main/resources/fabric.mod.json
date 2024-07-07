@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "first",
+	"version": "${version}",
+	"name": "First Mod",
+	"description": "Just figuring things out",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT-license",
+	"icon": "assets/first/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.straight.first.FirstMod"
+		],
+		"client": [
+			"net.straight.first.FirstModClient"
+		],
+		"fabric-datagen": [
+			"net.straight.first.FirstModDataGenerator"
+		]
+	},
+	"mixins": [
+		"first.mixins.json",
+		{
+			"config": "first.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
