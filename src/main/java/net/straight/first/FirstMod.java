@@ -1,6 +1,7 @@
 package net.straight.first;
 
 import net.fabricmc.api.ModInitializer;
+import net.initializer.Blocks;
 import net.initializer.Items;
 import net.minecraft.util.Identifier;
 
@@ -16,7 +17,7 @@ public class FirstMod implements ModInitializer {
 
 	logger.info("Starting Fabric ...");
 		Items.load();
-
+		Blocks.load();
 	}
 
 	public static Identifier id(String path){
