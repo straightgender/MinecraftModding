@@ -10,11 +10,11 @@ import net.straight.first.FirstMod;
 
 public class Blocks {
 
-    public static final Block EXAMPLE_BLOCK = register("example_block", new Block(
+    public static final  Block OPAL_BLOCK = registerWithItem("opal_block", new Block(
             AbstractBlock.Settings.create()
+                    .hardness(5.0F)
                     .requiresTool()
-                    .hardness(1.5F)
-                    .strength(6.0F)
+                    .strength(6.5F)
     ));
 
     public static <T extends Block> T register(String name, T block){
