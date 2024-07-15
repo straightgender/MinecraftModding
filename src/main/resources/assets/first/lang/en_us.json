@@ -2,5 +2,7 @@
   "item.first.box": "Box",
   "item.first.tuna": "BlueFin Tuna",
   "block.first.opal_block": "Opal Block",
-  "itemGroup.first.modded_group": "Modded Group"
+  "itemGroup.first.modded_group": "Modded Group",
+  "block.first.niobium_block": "Niobium Block",
+  "block.first.tungsten": "Tungsten"
 }

@@ -17,6 +17,13 @@ public class Blocks {
                     .strength(6.5F)
     ));
 
+    public static final Block NIOBIUM_BLOCK = registerWithItem("niobium_block", new Block(
+            AbstractBlock.Settings.create()
+                    .hardness(2.0F)
+                    .strength(4.0F)
+                    .requiresTool()
+    ));
+
     public static <T extends Block> T register(String name, T block){
         return Registry.register(Registries.BLOCK, FirstMod.id(name), block);
     }
