@@ -11,9 +11,9 @@ import java.util.Optional;
 
 public class ItemGroups {
     public static final Text EXAMPLE_TITLE = Text.translatable(
-            "itemGroup."+ FirstMod.id + "example.group"
+            "Modded Group"
     );
-    public static final ItemGroup EXAMPLE_GROUP = register("example_group", FabricItemGroup
+    public static final ItemGroup EXAMPLE_GROUP = register("modded_group", FabricItemGroup
             .builder()
             .displayName(EXAMPLE_TITLE)
             .icon(Items.TUNA::getDefaultStack)
@@ -37,5 +37,7 @@ public class ItemGroups {
     }
 
     public static void load(){}
+
+
 
 }

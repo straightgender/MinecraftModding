@@ -10,7 +10,7 @@ import net.straight.first.FirstMod;
 
 public class Blocks {
 
-    public static final  Block OPAL_BLOCK = registerWithItem("opal_block", new Block(
+    public static final Block OPAL_BLOCK = registerWithItem("opal_block", new Block(
             AbstractBlock.Settings.create()
                     .hardness(5.0F)
                     .requiresTool()
